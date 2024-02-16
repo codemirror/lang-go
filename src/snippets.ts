@@ -42,7 +42,7 @@ export const snippets: readonly Completion[] = [
     detail: "range",
     type: "keyword"
   }),
-  snip("select {\n\t${}\}", {
+  snip("select {\n\t${}\n}", {
     label: "select",
     detail: "statement",
     type: "keyword"
@@ -51,12 +51,12 @@ export const snippets: readonly Completion[] = [
     label: "case",
     type: "keyword"
   }),
-  snip("switch ${} {\n${}}", {
+  snip("switch ${} {\n\t${}\n}", {
     label: "switch",
     detail: "statement",
     type: "keyword"
   }),
-  snip("switch ${}.(${type}) {\n${}}", {
+  snip("switch ${}.(${type}) {\n\t${}\n}", {
     label: "switch",
     detail: "type statement",
     type: "keyword"

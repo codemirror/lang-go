@@ -13,11 +13,20 @@ const ScopeNodes = new Set([
 
 function defIDs(type: string, spec?: string) {
   return (node: SyntaxNodeRef, def: (node: SyntaxNodeRef, type: string) => void) => {
-    for (let ch = node.node.firstChild; ch; ch = ch!.nextSibling) {
-      if (ch.name == "DefName") def(ch, type)
-      if (spec && ch.name == spec) {
-        for (let scan = ch.firstChild; scan; scan = scan.nextSibling)
-          if (scan.name == "DefName") def(scan, type)
+    outer: for (let cur = node.node.firstChild, depth = 0, parent: SyntaxNode | null = null;;) {
+      while (!cur) {
+        if (!depth) break outer
+        depth--
+        cur = parent!.nextSibling
+        parent = parent!.parent
+      }
+      if (spec && cur.name == spec || cur.name == "SpecList") {
+        depth++
+        parent = cur
+        cur = cur.firstChild
+      } else {
+        if (cur.name == "DefName") def(cur!, type)
+        cur = cur.nextSibling
       }
     }
     return true

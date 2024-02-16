@@ -24,7 +24,7 @@ export const goLanguage = LRLanguage.define({
         Statement: continuedIndent({except: /^{/}),
       }),
       foldNodeProp.add({
-        "Block SwitchBlock SelectBlock LiteralValue InterfaceType StructType": foldInside,
+        "Block SwitchBlock SelectBlock LiteralValue InterfaceType StructType SpecList": foldInside,
         BlockComment(tree) { return {from: tree.from + 2, to: tree.to - 2} }
       })
     ]
