@@ -71,7 +71,7 @@ export const snippets: readonly Completion[] = [
     detail: "/ else block",
     type: "keyword"
   }),
-  snip("import ${name} from \"${module}\"\n${}", {
+  snip("import ${name} \"${module}\"\n${}", {
     label: "import",
     detail: "declaration",
     type: "keyword"
