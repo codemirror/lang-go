@@ -19,6 +19,19 @@ we have a [code of
 conduct](http://contributor-covenant.org/version/1/1/0/) that applies
 to communication around the project.
 
+## Usage
+
+```javascript
+import {EditorView, basicSetup} from "codemirror"
+import {go} from "@codemirror/lang-go"
+
+const view = new EditorView({
+  parent: document.body,
+  doc: `fmt.Println("hello world")`,
+  extensions: [basicSetup, go()]
+})
+```
+
 ## API Reference
 
 @go
