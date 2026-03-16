@@ -2,7 +2,7 @@
 
 # @codemirror/lang-go [![NPM version](https://img.shields.io/npm/v/@codemirror/lang-go.svg)](https://www.npmjs.org/package/@codemirror/lang-go)
 
-[ [**WEBSITE**](https://codemirror.net/) | [**ISSUES**](https://github.com/codemirror/dev/issues) | [**FORUM**](https://discuss.codemirror.net//) | [**CHANGELOG**](https://github.com/codemirror/lang-go/blob/main/CHANGELOG.md) ]
+[ [**WEBSITE**](https://codemirror.net/) | [**ISSUES**](https://github.com/codemirror/dev/issues) | [**FORUM**](https://discuss.codemirror.net/) | [**CHANGELOG**](https://github.com/codemirror/lang-go/blob/main/CHANGELOG.md) ]
 
 This package implements Go language support for the
 [CodeMirror](https://codemirror.net/) code editor.
