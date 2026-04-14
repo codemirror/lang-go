@@ -6,7 +6,7 @@ import {snippets} from "./snippets"
 import {localCompletionSource, dontComplete} from "./complete"
 
 /// A language provider based on the [Lezer Go
-/// parser](https://github.com/lezer-parser/go), extended with
+/// parser](https://code.haverbeke.berlin/lezer/go), extended with
 /// folding and indentation information.
 export const goLanguage = LRLanguage.define({
   name: "go",
