@@ -1,3 +1,5 @@
+**This repository has moved to https://code.haverbeke.berlin/codemirror/lang-go**
+
 <!-- NOTE: README.md is generated from src/README.md -->
 
 # @codemirror/lang-go [![NPM version](https://img.shields.io/npm/v/@codemirror/lang-go.svg)](https://www.npmjs.org/package/@codemirror/lang-go)
